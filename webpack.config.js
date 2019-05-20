@@ -41,12 +41,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Application',
-      template: './src/views/layout.pug',
-      hash: true,
-      'meta': {
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no'
-      }
+      template: './src/views/layout.pug'
     })
   ]
 };
