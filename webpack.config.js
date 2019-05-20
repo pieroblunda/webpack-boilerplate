@@ -31,16 +31,6 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.js$|\.es6$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
-        }
       }
     ]
   },
@@ -57,7 +47,6 @@ module.exports = {
       'meta': {
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no'
       }
-    }),
-    new webpack.optimize.UglifyJsPlugin({})
+    })
   ]
 };
