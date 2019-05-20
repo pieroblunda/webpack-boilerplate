@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     app:    "./src/app.js",
     navbar: "./src/navbar.module.js",
+    main: "./src/main.module.js",
     header: "./src/header.module.js",
     footer: "./src/footer.module.js"
   },
