@@ -4,7 +4,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: "./src/app.js",
+    app:    "./src/app.js",
+    header: "./src/header.module.js",
     footer: "./src/footer.module.js"
   },
   output: {
