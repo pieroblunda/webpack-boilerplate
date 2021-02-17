@@ -4,7 +4,11 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: "./src/app.js"
+    app:    "./src/app.js",
+    navbar: "./src/navbar.module.js",
+    main: "./src/main.module.js",
+    header: "./src/header.module.js",
+    footer: "./src/footer.module.js"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -41,12 +45,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Application',
-      template: './src/views/layout.pug',
-      hash: true,
-      'meta': {
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no'
-      }
+      template: './src/views/layout.pug'
     })
   ]
 };
